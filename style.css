@@ -1,0 +1,347 @@
+.container {
+  font-family: "EB Garamond", serif;
+  font-size: larger;
+  color: black;
+}
+
+/* Links and link states */
+a:hover {
+  color: black;
+}
+
+.about-me a {
+  color: black;
+  /* text-decoration: none; */
+}
+
+.about-me a:hover {
+  color: black;
+}
+
+.page-about a {
+  color: black;
+}
+
+.page-about a:hover {
+  color: black;
+}
+
+/* Using the Bootstrap "col" grid system for page structure */
+
+.container {
+  margin: 35px 0 0 0;
+  /* background-color: cornflowerblue; */
+  height: 100%;
+}
+
+.col-md-2 {
+  background-color: green;
+  height: 100;
+  display: inline-block;
+}
+
+.col-md-8 {
+  /* background-color: blanchedalmond; */
+}
+
+.col-md-10 {
+  height: 100%;
+}
+
+/* Persistent navigation bar */
+
+nav {
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  /* display: inline-block; */
+}
+
+nav a {
+  display: inline-block;
+  padding-right: 15px;
+  /* padding-bottom: 25px; */
+  margin-bottom: 5%;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* Home page about me */
+
+.about-me {
+  max-width: 550px;
+  font-size: x-large;
+  line-height: 30px;
+  /* margin-bottom: 4%; */
+}
+
+.hero {
+  /* margin-top: 10%; */
+  max-height: 420px;
+  width: auto;
+  max-width: 550px;
+  max-width: 100%;
+  display: block;
+}
+
+/* Standardized non-home-page styling */
+
+.page-title {
+  font-size: xx-large;
+  /* font-size: 3em; */
+  font-style: italic;
+  margin-bottom: 3%;
+  line-height: 35px;
+}
+
+.page-about {
+  width: 550px;
+  max-width: 100%;
+  font-size: large;
+}
+
+/* WORK CASE STUDY PREVIEWS */
+
+/* Case preview template */
+
+.case_prev {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.case_prev_img {
+  max-width: 50%;
+}
+
+/* Styling link from preview to detailed case study */
+
+.case_prev_link,
+.case_prev_link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* All text in the case preview */
+
+.case_prev_text {
+  display: inline-block;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 50%;
+}
+
+/* Preview text sub-items */
+
+.case_prev_title {
+  font-size: larger;
+  font-weight: 500;
+  line-height: 29px;
+  margin-top: 10px;
+}
+
+.case_prev_client {
+  font-family: Helvetica, sans-serif;
+  font-size: small;
+  margin-top: 1em;
+}
+.case_prev_methods {
+  font-family: Helvetica, sans-serif;
+  font-size: small;
+  margin-top: 1em;
+}
+
+/* DEBUGGING */
+
+.test1 {
+  background-color: cornflowerblue;
+}
+
+.test2 {
+  background-color: blanchedalmond;
+}
+
+/* CASE STUDY DETAIL PAGE TEMPLATE */
+
+/* Executive summary (whole container) */
+
+.exec_sum {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 4em;
+}
+
+/* Exec. summary text container */
+
+.exec_sum_text {
+  /* height: 250px; */
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 1em;
+  /* margin-right: 2em; */
+  /* flex-direction: column; */
+}
+
+/* Exec. summary sub-items */
+
+.project_title {
+  font-size: xx-large;
+  font-weight: 500;
+  margin-bottom: 1em;
+  line-height: 40px;
+}
+
+.project_client {
+  font-size: small;
+}
+
+.project_methods {
+  font-size: small;
+}
+
+.project_summary {
+  font-size: medium;
+  margin-top: 3%;
+}
+
+/* Exec. summary image */
+
+.exec_sum_img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 2em;
+  /* height: 520px; */
+  /* justify-content: space-around; */
+}
+
+.exec_sum_img img {
+  display: inline-block;
+  /* width: 100%; */
+  /* height: auto; */
+}
+
+.nav-item button {
+  font-family: Helvetica, sans-serif;
+  /* font-size: small;
+  font-weight: 700; */
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  font-family: "EB Garamond", serif;
+  color: black;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+  font-family: "EB Garamond", serif;
+  color: black;
+}
+
+/* Modifications for reusing exec sum section */
+
+.sec_title {
+  font-size: x-large;
+  /* font-style: italic; */
+}
+
+/* Responsive for moving up from mobile ——————————————————————————————— */
+/* responsive: 640px + */
+@media screen and (min-width: 640px) {
+  body {
+    padding: 0px;
+  }
+  footer {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* .hero {
+    margin-top: 0%;
+    height: 500px;
+    width: auto;
+    max-width: 100%;
+  } */
+
+  nav {
+    padding-bottom: 25px;
+    position: fixed;
+  }
+
+  nav a {
+    margin: 0 0 4px 0;
+    /* display: inline-block; */
+    padding-bottom: 0px;
+  }
+
+  .case_prev {
+    flex-direction: row;
+  }
+
+  .case_prev_text {
+    margin-left: 1.5em;
+  }
+
+  .exec_sum {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .exec_sum_img {
+    width: 50%;
+  }
+
+  .project_title {
+    margin-bottom: 0em;
+  }
+
+  .exec_sum_text {
+    width: 50%;
+    margin-top: 0em;
+  }
+
+  .project_client {
+    margin-top: 3%;
+  }
+}
+
+/* responsive: 790px + */
+@media screen and (min-width: 790px) {
+  nav a {
+    margin: 0 0 4px 0;
+    /* display: inline-block; */
+    display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    margin-top: 2%;
+    /* max-height: 420px; */
+    /* width: auto; */
+  }
+
+  nav a {
+    margin: 0 0 4px 0;
+    /* display: block; */
+  }
+}
