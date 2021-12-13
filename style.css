@@ -263,6 +263,13 @@ nav a:hover {
   /* font-style: italic; */
 }
 
+/* About page */
+
+.headshot {
+  max-width: 250px;
+  height: auto;
+}
+
 /* Responsive for moving up from mobile ——————————————————————————————— */
 /* responsive: 640px + */
 @media screen and (min-width: 640px) {
